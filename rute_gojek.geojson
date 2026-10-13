@@ -1,0 +1,113 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Jalan Sekitar ULBI",
+        "jenis": "Jalan",
+        "tipe_geometri": "Polyline"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            107.5752,
+            -6.8726
+          ],
+          [
+            107.57535,
+            -6.87275
+          ],
+          [
+            107.57555,
+            -6.8729
+          ],
+          [
+            107.57575,
+            -6.87305
+          ],
+          [
+            107.57595,
+            -6.8732
+          ],
+          [
+            107.5762,
+            -6.87335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Rute GoRide (Simulasi)",
+        "jenis": "Rute Transportasi",
+        "layanan": "GoRide",
+        "titik_awal": "Universitas Logistik dan Bisnis Internasional",
+        "titik_tujuan": "Titik tujuan contoh",
+        "ongkos_rp": 10000,
+        "status": "Simulasi"
+      },
+      "geometry": {
+        "type": "LineString",
+        "coordinates": [
+          [
+            107.5752,
+            -6.8726
+          ],
+          [
+            107.57535,
+            -6.87275
+          ],
+          [
+            107.57555,
+            -6.8729
+          ],
+          [
+            107.57575,
+            -6.87305
+          ],
+          [
+            107.57595,
+            -6.8732
+          ],
+          [
+            107.5762,
+            -6.87335
+          ]
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Titik Penjemputan",
+        "jenis": "Lokasi",
+        "kategori": "Pickup"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.5752,
+          -6.8726
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "nama": "Titik Tujuan",
+        "jenis": "Lokasi",
+        "kategori": "Dropoff"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          107.5762,
+          -6.87335
+        ]
+      }
+    }
+  ]
+}

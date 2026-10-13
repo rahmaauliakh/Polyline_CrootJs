@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Peta interaktif polyline jalan dan simulasi rute GoRide sekitar ULBI menggunakan CrootJS dan GeoJSON.">
+  <title>Rute GoRide ULBI | CrootJS</title>
+  <link rel="stylesheet" href="./style.css">
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="eyebrow">Peta interaktif · CrootJS + GeoJSON</div>
+    <h1>Rute GoRide sekitar ULBI</h1>
+    <p>Visualisasi polyline jalan, titik jemput, dan tujuan</p>
+  </header>
+  <main class="layout">
+    <section class="map-section" aria-label="Peta rute">
+      <div id="map" class="map" aria-label="Peta interaktif rute GoRide"></div>
+    </section>
+    <aside class="panel">
+      <span class="tag">SIMULASI RUTE</span>
+      <h2>Estimasi ongkos</h2>
+      <div class="fare-label">Biaya contoh perjalanan</div>
+      <div class="fare">Rp10.000</div>
+      <div class="stop">
+        <span class="dot pickup"></span>
+        <div><strong>Titik penjemputan</strong><small>Universitas Logistik dan Bisnis Internasional (ULBI)</small></div>
+      </div>
+      <div class="stop">
+        <span class="dot dropoff"></span>
+        <div><strong>Titik tujuan</strong><small>Tujuan contoh berdasarkan koordinat GeoJSON</small></div>
+      </div>
+      <div class="legend">
+        <div><span class="line road-line"></span>Polyline jalan</div>
+        <div><span class="line route-line"></span>Rute GoRide</div>
+      </div>
+      <button id="fitRoute" type="button">Fokus ke rute</button>
+      <button id="downloadGeoJSON" class="secondary-button" type="button">Unduh GeoJSON</button>
+      <p id="appStatus" class="status" role="status">Memuat peta…</p>
+      <p class="note">Ongkos dan geometri rute hanya simulasi, bukan tarif resmi Gojek atau jalur jalan yang telah diverifikasi.</p>
+    </aside>
+  </main>
+  <footer>Peta dasar © OpenStreetMap contributors. Koneksi internet diperlukan untuk memuat peta dasar.</footer>
+</body>
+</html>
